@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Card dengan Foto dan Keterangan (Horizontal)</title>
+<style>
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card {
+        width: 300px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 20px;
+        cursor: pointer;
+    }
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+    .card-content {
+        padding: 20px;
+    }
+    .caption {
+        font-style: italic;
+        color: #666;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="card" onclick="pesanWhatsApp('+6281217340335')">
+        <img src="Gambar WhatsApp 2024-05-02 pukul 01.33.59_410667a4.jpg" alt="Deskripsi Gambar 1">
+        <div class="card-content">
+            <p class="caption">PAKET 1</p>
+        </div>
+    </div>
+    <div class="card" onclick="pesanWhatsApp('+6281217340335')">
+        <img src="Gambar WhatsApp 2024-05-02 pukul 01.35.24_ae19fed1.jpg" alt="Deskripsi Gambar 2">
+        <div class="card-content">
+            <p class="caption">PAKET 2</p>
+        </div>
+    </div>
+    <div class="card" onclick="pesanWhatsApp('+6281217340335')">
+        <img src="IMG-20240502-WA0006.jpg" alt="Deskripsi Gambar 2">
+        <div class="card-content">
+            <p class="caption">PAKET 3</p>
+        </div>
+    </div>
+    <div class="card" onclick="pesanWhatsApp('+6281217340335')">
+        <img src="IMG-20240502-WA0007.jpg" alt="Deskripsi Gambar 2">
+        <div class="card-content">
+            <p class="caption">PAKET 4</p>
+        </div>
+    </div>
+    <div class="card" onclick="pesanWhatsApp('+6281217340335')">
+        <img src="IMG-20240502-WA0008.jpg" alt="Deskripsi Gambar 2">
+        <div class="card-content">
+            <p class="caption">PAKET 5</p>
+        </div>
+    </div>
+    <div class="card" onclick="pesanWhatsApp('+6281217340335')">
+        <img src="IMG-20240502-WA0009.jpg" alt="Deskripsi Gambar 2">
+        <div class="card-content">
+            <p class="caption">PAKET 6</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function pesanWhatsApp(nomor) {
+        window.open('https://api.whatsapp.com/send?phone=' + nomor + '&text=Hallo,%20saya%20tertarik%20dengan%20paket%20ini.%20Mohon%20info%20lebih%20lanjut.', '_blank');
+    }
+</script>
+
+</body>
+</html>
